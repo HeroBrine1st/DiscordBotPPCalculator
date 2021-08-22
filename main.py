@@ -40,6 +40,10 @@ rework_embed.add_field(
 rework_embed.set_footer(
     text="If branch is outdated in bot, please tell @Bullet#2268 about this issue.")
 
+invite_embed=discord.Embed(description=The bot is private because non-verified bots have 100 servers limit. So if you want to add this bot to your server — just ping <@270892441509298177>.color=0x000000)
+invite_embed.add_field(
+    name=Or host it yourself, value=https://github.com/HeroBrine1st/DiscordBotPPCalculator, inline=False)
+
 pardon_embed = discord.Embed(color=0xff8700)
 pardon_embed.set_image(
     url="https://media.discordapp.net/attachments/502936093260513280/878989028404375562/pardon.png")
@@ -96,7 +100,7 @@ async def rework(ctx):
 
 @bot.command(name="invite")
 async def invite(ctx):
-    await ctx.reply(embed=discord.Embed(description="The bot is private because non-verified bots have 100 servers limit. So if you want to add this bot to your server — just ping <@270892441509298177>.", color=0x000000))
+    await ctx.reply(embed=invite_embed)
 
 
 @bot.command(name="pardon")
