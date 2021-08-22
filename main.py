@@ -40,9 +40,9 @@ rework_embed.add_field(
 rework_embed.set_footer(
     text="If branch is outdated in bot, please tell @Bullet#2268 about this issue.")
 
-invite_embed=discord.Embed(description=The bot is private because non-verified bots have 100 servers limit. So if you want to add this bot to your server — just ping <@270892441509298177>.color=0x000000)
+invite_embed=discord.Embed(description="The bot is private because non-verified bots have 100 servers limit. So if you want to add this bot to your server — just ping <@270892441509298177>.", color=0x000000)
 invite_embed.add_field(
-    name=Or host it yourself, value=https://github.com/HeroBrine1st/DiscordBotPPCalculator, inline=False)
+    name="Or host it yourself", value="https://github.com/HeroBrine1st/DiscordBotPPCalculator", inline=False)
 
 pardon_embed = discord.Embed(color=0xff8700)
 pardon_embed.set_image(
